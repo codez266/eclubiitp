@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>
+			E-CLUB IITP
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<script type="text/javascript">
+			(function(){
+					/* Mobile */
+					$('#menu-wrap').prepend('<div id="menu-trigger">Menu</div>');		
+					$("#menu-trigger").on("click", function(){
+						$("#menu").slideToggle();
+					});
+
+					// iPad
+					var isiPad = navigator.userAgent.match(/iPad/i) != null;
+					if (isiPad) $('#menu ul').addClass('no-transition');      
+			})();         
+		</script>
+	</head>
+	<body>
+		<div id ="header">
+			<div class="header-left">
+				<img src="images/logo.png" width="100" height="100" alt="E-Club IIT Patna"  /></a>
+			</div>
+			<div class="header-right">
+
+			</div>
+		</div>
+		<div id="home-content">
+		</div>
+
+	</body>
+</html>
